@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+   	{{#if stylesheets}}
+		{{#each stylesheets}}
+			<link rel="stylesheet" href="{{this}}">
+		{{/each}}
+	{{/if}}	
+
+  </head>
+  <body>
+    {{{body}}}
+  </body>
+
+	{{#if scripts}}
+		{{#each scripts}}
+			<script src="{{this}}"></script>
+		{{/each}}
+	{{/if}}
+
+</html>
